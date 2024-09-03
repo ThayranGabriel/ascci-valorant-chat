@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Criador de Arte ASCII</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>ASCII PARA CHAT VALORANT</h1>
+
+        <div id="controls">
+            <label for="height-slider">Altura:</label>
+            <input type="range" id="height-slider" min="1" max="12" value="7" oninput="atualizarAlturaGrid(this.value)">
+            <span id="height-value">7</span>
+        </div>
+
+        <div id="grid"></div>
+
+        <div class="botoes">
+            <button onclick="copiarParaClipboard()">
+                
+                Copiar Arte ASCII
+            </button>
+            <button onclick="limparTudo()">Limpar Tudo</button>
+        </div>
+        
+        <div class="output">
+            <h2>Pre-visualizacao</h2>
+            <div id="ascii-output"></div>
+        </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
